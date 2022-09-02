@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/html/csstest1.css">
+</head>
+    <body>
+        <h1 style="text-align: center">我的第一个标题</h1>
+        <p style="text-decoration: dotted">我的第一个段落。</p>
+    </body>
+</html>
+<hr/><!--use hr tag to add a line-->
+<html>
+    <body>
+        <a href="http://www.w3school.com.cn">
+            this is a link 
+        </a>
+    </br>
+        <a href="#C4">跳转到第四章</a>
+        <img src="w3school.jpg" width="300" height="120"/>
+    </body>
+</html>
+<br/><!--to break lines in a paragraph,use the br tag-->
+<html>
+    <body style="background-color:transparent" >
+        <h2 style="background-color:powderblue;font-family: Arial;font-size: 20%;text-align: left;">请看: 改变了颜色的背景。</h2>
+    </body>
+</html>
+<html>
+    <body>
+        <b>
+            this text is bold.
+        </b>
+        <br/>
+        <i>
+            this text is italic. 
+        </i>
+        <br/>
+        <small>
+            this text is small.
+        </small>
+        <br/>
+        this text is
+        <sub>
+             subscript.
+        </sub>
+        <iframe src="http://www.w3school.com.cn" width="100%" height="200" frameboder="5"></iframe>
+        <br/>
+        this text is 
+        <sup>
+            superscript.
+        </sup>
+<pre>
+    这个可以保持想要的换行位置
+            很适合显示代码
+
+
+
+        </pre>
+    <q>
+        <acronym title="world wide web">WWW</acronym>
+    </q>
+    <br/>
+    <blockquote>
+        <abbr title="etcetera">etc.</abbr>
+    </blockquote>
+   
+    </body>
+</html>
+<html>
+    <head>
+        <style>
+            span.red{color: red;}
+        </style>
+    </head>
+    <body>
+        <h1>
+            my <span class="red">important</span> heading
+        </h1>
+    </body>
+</html>
+</br>
+<html>
+    <head>
+        <style>
+            div.cites{
+                background-color: black;
+                color: red;
+                margin: auto;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cites">
+            <h2>
+                London 
+            </h2>
+            <p>London is a modern city.</p>
+        </div>
+    </body>
+</html>
+<html>
+    <body>
+        <h3 id="C4">第四章</h3>
+        <pre>
+            this is a long paragraph. 
+
+
+<!-- 
+    这是一段长注释
+    通常有很多行的时候这样显示
+-->
+
+
+        </pre>
+    
+    </body>
+</html>
+</br>
+<html>
+<body>
+<iframe src="/example/html/demo_iframe.html" width="100%" height="200" name="iframe_a"></iframe>
+<p><a href="http://www.w3school.com.cn" target="iframe_a">W3School.com.cn</a></p>
+<p><b>注释:</b>由于链接的目标匹配 iframe 的名称，所以链接会在 iframe 中打开。</p>
+</body>
+</html>
+</br>
+<html>
+    <body>
+        <h2>
+            我的第一段JavaScript
+        </h2>
+        <button type="button"
+        onclick=" document.getElementById('demo').innerHTML = Date()">
+        点击我显示时间
+    </button>
+    <p id="demo"></p>
+    </body>
+</html>
+</br>
+<html>
+    <body>
+        <p>
+            JavaScript可以更改元素的内容
+        </p>
+        <button type="button" onclick="myFunction()">点击我！</button>
+        <p id="demo1">这是一个演示</p>
+        <script>
+            function myFunction() {
+                document.getElementById("demo1").innerHTML="Hello,JavaScript!";
+                document.getElementById("demo1").style.fontSize="25px";
+                document.getElementById("demo1").style.color="red";
+                document.getElementById("demo1").style.backgroundColor="blue";
+            }
+        </script>
+    </body>
+</html>
+</br>
+<html>
+    <body>
+        <p>使用JavaScript 更改图像的src属性</p>
+        <mark>
+            
+        </mark>
+        <script>
+            function light(sw) {
+                var pic;
+                if(sw==0){
+                    pic="/i/eg_bulboff.gif"
+                }else{
+                    pic="/i/eg_bublon.gif"
+                }
+                document.getElementById('myImage').src=pic;
+            }
+        </script>
+<img id="myImage" src="/i/eg_bulboff.gif" width="109" height="180">
+<p>
+    <button type="button" onclick="light(1)">开灯</button>
+    <button type="button" onclick="light(0)">关灯</button>
+</p>
+</body>
+</html>
+</br>
+</br>
+
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+<h1>City Gallery</h1>
+</div>
+
+<div id="nav">
+London</br>
+Paris</br>
+Tokyo</br>
+</div>
+
+<div id="section">
+<h2>London</h2>
+<p>
+London is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.
+</p>
+<p>
+Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.
+</p>
+</div>
+
+<div id="footer">
+Copyright ? W3Schools.com
+</div>
+
+</body>
+</html>
+
+</br>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" 
+  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+<div class="jumbotron">
+  <h1>W3School Demo</h1> 
+  <p>Resize this responsive page!</p> 
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-4">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Paris</h2>
+    <p>Paris is the capital and most populous city of France.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+</div>
+</div>
+
+</body>
+
+</html>
+<br>
+<html>
+<body>
+
+<section>
+<h1>WWF</h1>
+<p>
+The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.
+</p>
+</section>
+
+<section>
+<h1>WWF's Panda symbol</h1>
+<p>
+The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.
+</p>
+</section>
+
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css"> 
+body
+{
+font-size:70%;
+font-family:verdana,helvetica,arial,sans-serif;
+}
+</style>
+
+<script type="text/javascript"> 
+function cnvs_getCoordinates(e)
+{
+x=e.clientX;
+y=e.clientY;
+document.getElementById("xycoordinates").innerHTML="Coordinates: (" + x + "," + y + ")";
+}
+ 
+function cnvs_clearCoordinates()
+{
+document.getElementById("xycoordinates").innerHTML="";
+}
+</script>
+</head>
+
+<body style="margin:0px;">
+
+<p>把鼠标悬停在下面的矩形上可以看到坐标：</p>
+
+<div id="coordiv" style="float:left;width:199px;height:99px;border:1px solid #c3c3c3" onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()"></div>
+</br>
+</br>
+</br>
+<div id="xycoordinates"></div>
+ 
+</body>
+</html>
+
+</br>
+</br>
+</br>
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+cxt.fillStyle="#FF0000";
+cxt.beginPath();
+cxt.arc(70,18,15,0,Math.PI*8,true);
+cxt.closePath();
+cxt.fill();
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+   <polygon points="100,10 40,180 190,60 10,60 160,180"
+   style="fill:red;stroke:blue;stroke-width:3;fill-rule:evenodd;" />
+</svg>
+ 
+</body>
+</html>
+</br>
+</br>
+</br>
+</br>
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="320" height="240" controls="controls" autoplay="autoplay">
+  <source src="/i/movie.ogg" type="video/ogg" />
+  <source src="/i/movie.mp4" type="video/mp4" />
+  <source src="/i/movie.webm" type="video/webm" />
+  <object data="/i/movie.mp4" width="320" height="240">
+    <embed width="320" height="240" src="/i/movie.swf" />
+  </object>
+</video>
+
+</body>
+</html>
+</br>
+</br>
+</br>
+<!DOCTYPE html>
+<html lang="en">
+<title>HTML</title>
+<meta charset="utf-8">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<style>
+body {
+    font-family:Verdana,sans-serif;font-size:0.8em;
+}
+header,footer,section,article {
+    border:1px solid grey;
+    margin:5px;margin-bottom:15px;padding:8px;
+    background-color:white;
+}
+header,footer {
+    color:white;background-color:#444;margin-bottom:5px;
+}
+section {
+    background-color:#ddd;
+}
+nav ul  {
+    margin:0;padding:0;
+}
+nav ul li {
+    display:inline; margin:5px;
+}
+</style>
+
+<body>
+
+<header>
+<h1>Monday Times</h1>
+</header>
+
+<nav>
+<ul>
+  <li>News</li>
+  <li>Sports</li>
+  <li>Weather</li>
+</ul>
+</nav>
+
+<section>
+<h2>News Section</h2>
+
+<article>
+<h2>News Article</h2>
+<p>Ipsum lurum hurum turum ipsum lurum hurum turum
+ipsum lurum hurum turum ipsum lurum hurum turum.</p>
+<p>Ipsum lurum hurum turum ipsum lurum hurum turum
+ipsum lurum hurum turum ipsum lurum hurum turum.</p>
+<p>Ipsum lurum hurum turum ipsum lurum hurum turum
+ipsum lurum hurum turum ipsum lurum hurum turum.</p>
+</article>
+
+<article>
+<h2>News Article</h2>
+<p>Ipsum lurum hurum turum ipsum lurum hurum turum
+ipsum lurum hurum turum ipsum lurum hurum turum.</p>
+<p>Ipsum lurum hurum turum ipsum lurum hurum turum
+ipsum lurum hurum turum ipsum lurum hurum turum.</p>
+<p>Ipsum lurum hurum turum ipsum lurum hurum turum
+ipsum lurum hurum turum ipsum lurum hurum turum.</p>
+</article>
+
+</section>
+
+<footer>
+<p>© 2014 Monday Times. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
